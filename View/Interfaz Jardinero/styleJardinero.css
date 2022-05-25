@@ -1,0 +1,13 @@
+body{
+    display: flex;
+    margin: 0;
+}
+.navbar{
+    display: Flex ;
+    margin: auto;
+    background-color: lightgreen;
+
+}
+.navbar p{
+    
+}
