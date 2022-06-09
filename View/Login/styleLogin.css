@@ -4,14 +4,13 @@ body{
     background-color: white;
     color: white;
 }
-
 .encabezado{
     background-color: green;
     display: block;
     text-align:center;
 }
 .formulario_login {
-    padding: 100px;
+    padding: 50px;
     margin: 30% auto;
     display: block;
     width:500px;
