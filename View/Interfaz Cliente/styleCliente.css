@@ -1,0 +1,21 @@
+body{
+    margin: 0 auto;
+    background-color: white;
+    color: white;
+}
+
+.encabezado{
+    background-color: green;
+    display: block;
+    text-align:center;
+}
+
+.navbar{
+    display: Flex ;
+    margin: auto;
+    background-color: lightgreen;
+
+}
+.navbar p{
+    
+}
