@@ -1,0 +1,41 @@
+
+
+body{
+    margin: 0 auto;
+    background-color: white;
+}
+
+.form-container{
+    display: flexbox;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(162, 216, 109);
+}
+#form_fam-cont,
+    #gira{
+        margin: 0px;
+        padding: 5px;
+        text-align: center;
+    }
+    div#form_fam-cont {
+        width: 100%;
+        display: none;
+        background: #dffdc1;
+    }
+h2{
+    display:flexbox;
+    text-align: center;
+}
+input[type="number"]{
+    width: 50px;
+}
+input[type="number"]:hover{
+    width: 60px;
+}
+input {
+    width: 200px;
+    margin: 2.5px;
+}
+input:hover{
+    width: 220px;
+}

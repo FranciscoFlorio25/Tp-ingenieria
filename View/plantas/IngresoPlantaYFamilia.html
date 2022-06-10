@@ -1,37 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
     <head><meta http-equiv="Content-Type" content="text/">
+        <link rel="stylesheet" href="./PlantasEstilo.css" type="text/css" Media="screen" />
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script type="text/javascript" src="./Controller.js"></script>
     </head>
     <body>
-        <div id="form container">
-            <form>
+        <script>
+            $(document).ready(function() {
+                $("#gira").click(function() {
+                    $("#form_fam-cont").slideToggle("slow");
+                });
+            });
+        </script>
+        <h2>Ingreso de planta</h2>
+        <div class="form-container">
+            <form class = "planta-form">
                 <div>
-                    <p>Nombre de la planta</p>
-                    <input type="text" text = "Nombre de planta">
+                    <input type="text" text = "Nombre de planta" placeholder="Nombre de planta">
                 </div>
                 <div>
-                    <p>Caracteristicas de la planta</p>
-                    <input type="text" text = "Detalle de la planta">
+                    <input type="text" text = "Detalle de la planta" placeholder="Detalle de la planta">
                 </div>
                 <div>
-                    <p>Identificacion de la planta</p>
-                    <input type = "text" text = "Id de la planta">
-                </div>
-                <div class = "Colum-Fila">
-                    <p>Columna</p>
-                    <input type = "number" text ="columna">
-                    <p>Fila</p>
-                    <input type = "number" text ="fila">
+                    <input type = "text" text = "Id de la planta" placeholder="Id de la planta">
                 </div>
                 <div>
-                    <p>Seleccionar familia (especie)</p>
-                    <input type = "scroll">
-                    <button type="send" class="btonAgregar">Agregar familia</button>
+                    <input type = "text" text = "tipo de suelo" placeholder="Tipo de suelo"> 
+                </div>
+                <div id = "fil-coll">
+                    <label for = "numeros" >Columna y Fila</label>
+                    <input id="numeros" type = "number" text ="columna" >
+                    <input id="numeros" type = "number" text ="fila" >
                 </div>
                 <div>
-                    <button type="send" class="bton enviar">enviar</button>
+                    <div>
+                        <input type="button" id="gira" value = "Agregar Familia">
+                    </div>
+                    <div id="form_fam-cont">
+                        <form>
+                            <input type="text" id="IngresoNombre"text ="Nombre de especie" placeholder = "Nombre Especie">
+                            <button type = "button" id="" onclick = "agregarAFamilia();"> Agregar </button>
+                        </form>
+                    </div>
+                    <Label for ="selec_fam">Seleccionar familia (especie)</label>
+                    <select id="" class="selec_fam" onload= "seleccionarFamilia();" placeholder="Seleccionar familia (especimen)">
+                        <option>Selecciona una Familia</option> 
+                    </select>
+                </div>
+                <div class="form-container">
+                    <input type = "submit" class="btnEnviar" value= "Enviar" >
                 </div>
             </form>
         </div>
+
     </body>
 </html>
