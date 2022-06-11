@@ -38,13 +38,11 @@
                         <input type="button" id="gira" value = "Agregar Familia">
                     </div>
                     <div id="form_fam-cont">
-                        <form>
-                            <input type="text" id="IngresoNombre"text ="Nombre de especie" placeholder = "Nombre Especie">
+                            <input type="text" id="IngresoNombre" text ="Nombre de especie" placeholder = "Nombre Especie">
                             <button type = "button" id="" onclick = "agregarAFamilia();"> Agregar </button>
-                        </form>
                     </div>
                     <Label for ="selec_fam">Seleccionar familia (especie)</label>
-                    <select id="" class="selec_fam" onload= "seleccionarFamilia();" placeholder="Seleccionar familia (especimen)">
+                    <select id="selector" class="selec_fam" onclick= "seleccionarFamilia();" placeholder="Seleccionar familia (especimen)" required>
                         <option>Selecciona una Familia</option> 
                     </select>
                 </div>

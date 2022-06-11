@@ -5,7 +5,6 @@
     --colorNav: white;
     --colorBotonesNav: black ;
     --colorBlanco:black;
-   
   }
 
 body{
@@ -47,6 +46,7 @@ body{
     transition-duration: 0.5s;
     color: white;
 }
+
 
 .botonBusqueda{
     border-radius: 5px;
