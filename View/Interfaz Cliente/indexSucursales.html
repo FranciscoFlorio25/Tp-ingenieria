@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Busqueda de sucursales </title>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="./styleSucursales.css">
+
+    <link rel="stylesheet" href="../leaflet/leaflet.css">
+    <script src="../leaflet/leaflet.js"></script>
+    <script   src="../javascript/mapa.js"></script>
+
+    <link rel="stylesheet" href="../leaflet/MarkerCluster.css">
+    <link rel="stylesheet" href="../leaflet/MarkerCluster.Default.css">
+    <script src="../leaflet/leaflet.markercluster-src.js"></script>
+    <script src="../javascript/sucursal.js"></script>
+
+  </head>
+  <body onload="bootstrap();">
+    
+    <div id="containerPantalla1">
+    	<div id="busqueda1" >
+        <div id=nav>
+        </div>
+        <h1>Búsqueda de sucursal.</h1>
+        <div id="bodyForm">
+          <div id="form">
+              
+                <div class="forma">
+                    
+                      <div class="camposStyle">
+                        <label>Nombre sucursal</label>
+                        <input id="nombreSucursal" type="text" placeholder="Buscar...">
+                        
+                      </div>
+                      <div id="botones">
+                        <button onclick="mostrarSucursales()">Buscar</button>
+                        <div>
+                          <label class="divCheckbox">Mostrar todos los resultados en el mapa</label>
+                          <input type="checkbox" id="checkMostrarTodo">
+                        </div> 
+                      </div>
+                      </div>
+
+                     
+                </div>
+                <div id=lista >
+                    <div class="busqueda" id="list1">
+                      <div class="fotos" onclick="mostrarSucursalEnPantalla(0)"  id="foto1">
+
+                      </div>
+                      <div class="informacionSucursales" >
+                        <label id="nombre1">Nombre:</label>
+                        <p id="descripcion1">Descripcion:</p> 
+                        <label id="direccion1">Direccion:</label>
+
+                      </div>
+                    </div>
+                    <div class="busqueda" id="list2">
+                      <div class="fotos" onclick="mostrarSucursalEnPantalla(1)"  id="foto2">
+
+                      </div>
+                      <div class="informacionSucursales" >
+                        <label id="nombre2">Nombre:</label>
+                        <p id="descripcion2">Descripcion:</p>
+                        <label id="direccion2">Direccion:</label>
+
+                    </div>
+                    </div>
+                    <div class="busqueda" id="list3">
+                    <div class="fotos" onclick="mostrarSucursalEnPantalla(2)"  id="foto3">
+                    </div>
+                      <div class="informacionSucursales" >
+                        <label id="nombre3">Nombre:</label>
+                        <p id="descripcion3">Descripcion:</p>
+                        <label id="direccion3">Direccion:</label>
+                      </div>
+                    </div>
+
+                    </div>
+                 </div>
+
+          </div>
+          <div id="map">
+        
+          </div>
+        </div>
+    	
+       </div>
+
+    </div> 
+
+   
+  </body>
+
+</html>

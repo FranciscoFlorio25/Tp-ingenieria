@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Búsqueda de plantas</title>
+        <meta charset="utf-8">
+        <script src="../javascript/plantas.js"></script>
+
+        <link rel="stylesheet" href="./styleCliente.css">
+    </head>
+        <body>
+            <h1 class="encabezado">Búsqueda de plantas</h1>
+            <nav class="navbar">
+                <div id="busqueda">
+
+                    <p>
+                    <form>
+                        <label id="campoBusqueda" for="campo">Buscar por nombre de planta o familia</label>
+                        
+                        <input type="plantas" id="plant" placeholder="Buscar...">
+                    </form>
+            
+                    <div>
+                        <button id="btnBuscar" class="botonBusqueda" onclick="buscar()">
+                            Buscar
+                        </button>
+                    </div>
+                    </p>
+            
+                </div>
+            </nav>
+
+            
+            <div class="tablaPlantas">
+                <table id="tabla">
+                </table>
+                <script>
+                    getPlantas();
+                </script>
+
+            </div>
+        </body>
+    </html>
+    

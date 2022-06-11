@@ -1,21 +1,144 @@
+:root {
+    --tamañoFuente: 23px;
+    --tamañoFuenteChica: 15px;
+    --colorFondo: rgb(252, 252, 252);
+    --colorNav: white;
+    --colorBotonesNav: black ;
+    --colorBlanco:black;
+   
+  }
+
 body{
     margin: 0 auto;
     background-color: white;
-    color: white;
+    background-size: 10rem;
+    color: rgb(0, 0, 0);
 }
 
 .encabezado{
-    background-color: green;
+    background-color: white;
     display: block;
     text-align:center;
 }
 
 .navbar{
-    display: Flex ;
+    display: block;
     margin: auto;
     background-color: lightgreen;
 
 }
-.navbar p{
+
+
+#botones{
+    position: absolute;
+    left:0%;
+    height: 50px;
+    font-weight: 100; 
     
+    
+}
+
+
+.botonForm{
+    font-size:var(--tamañoFuente);
+    background-color: black;
+    border-radius: 5px;
+    border-style: solid black;
+    transition-duration: 0.5s;
+    color: white;
+}
+
+.botonBusqueda{
+    border-radius: 5px;
+    border-style: solid black;
+    transition-duration: 0.5s;
+
+}
+
+
+
+#busqueda{
+    position:static;
+    display: inline-block;
+    width: 20%;
+    height: 10%;
+    width: 150px;
+
+}
+
+
+.btnBuscar:hover{
+    background-color: var(--colorBotonesNav);
+}
+
+
+#btnBuscar{
+    display: block;
+    position: absolute;
+    color: white;
+    background-color: black;
+    font-size: var(--tamañoFuenteChica);
+    padding:10px;
+    width: 8%;
+    margin-top: -2%;
+    left: 18%;
+    right: 5%;
+}
+
+img {
+    float: left;
+    width:  150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+table {
+    display: table;
+    border-collapse:separate;
+    box-sizing:content-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    background-color: rgb(155, 245, 104);
+    width: 100%;
+    height: 180%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+
+}
+
+table, tr {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 1px 2px;
+    image-resolution:calc();
+
+}
+
+table, td {
+    border:black;
+}
+
+
+input {
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    margin: 0em;
+    padding: 8px 25px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
 }
